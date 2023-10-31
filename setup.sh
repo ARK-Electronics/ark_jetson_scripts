@@ -41,6 +41,7 @@ sudo ninja -C build install
 popd
 
 # mavlink-router configuration
+sudo mkdir -p /etc/mavlink-router
 sudo cp main.conf /etc/mavlink-router/
 
 echo "Installing ARK Jetson scripts"
