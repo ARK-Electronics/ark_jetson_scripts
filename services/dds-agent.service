@@ -1,7 +1,7 @@
 [Unit]
 Description=Micro-XRCE-DDS-Agent
 Wants=network.target
-After=syslog.target network-online.target time-sync.target
+After=syslog.target network-online.target
 
 [Service]
 Type=simple
