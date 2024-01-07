@@ -6,7 +6,7 @@ After=dev-ttyTHS0.device sys-devices-platform-3100000.serial-tty-ttyTHS0.device 
 
 [Service]
 Type=simple
-ExecStart=/snap/bin/micro-xrce-dds-agent serial -b 3000000 -D /dev/ttyTHS0
+ExecStart=MicroXRCEAgent serial -b 3000000 -D /dev/ttyTHS0
 Restart=on-failure
 RestartSec=5
 

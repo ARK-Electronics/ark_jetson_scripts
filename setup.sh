@@ -13,7 +13,7 @@ sudo apt install -y \
 		g++ \
 		systemd \
 
-sudo pip3 install Jetson.GPIO meson pyserial pymavlink dronecan
+sudo pip3 install Jetson.GPIO meson setuptools==69.0.3 asyncio pyserial pymavlink dronecan mavsdk
 
 # Configure environment
 sudo systemctl stop nvgetty
