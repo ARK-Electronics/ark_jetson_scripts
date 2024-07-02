@@ -1,0 +1,13 @@
+[Unit]
+Description=ARK UI Backend Service
+Wants=network-online.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/start_ark_ui_backend.sh
+WorkingDirectory=/var/www/ark-ui/api
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Mavlink Router
+Wants=network.target
+Requires=dev-serial-by\x2did-usb\x2dARK_ARK_FMU_v6X.x_0\x2dif00.device
+After=dev-serial-by\x2did-usb\x2dARK_ARK_FMU_v6X.x_0\x2dif00.device network-online.target syslog.target
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/start_mavlink_router.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
